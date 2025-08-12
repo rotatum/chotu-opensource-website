@@ -15,22 +15,51 @@ const Index = () => {
         <link rel="canonical" href={canonical} />
       </Helmet>
       <Hero />
-      <section className="container mx-auto py-12">
-        <h2 className="font-display text-3xl md:text-4xl mb-6">Built for Builders</h2>
+      <section className="container mx-auto py-16">
+        <h2 className="font-display text-3xl md:text-4xl mb-8">Why Chotu</h2>
         <div className="grid md:grid-cols-3 gap-6">
-          <article className="p-6 rounded-lg border bg-card">
-            <h3 className="font-semibold">6‑DOF Mechanics</h3>
-            <p className="text-sm text-muted-foreground mt-2">Six Feetech STS3215 servos actuate six joints for smooth, precise motion.</p>
-          </article>
-          <article className="p-6 rounded-lg border bg-card">
-            <h3 className="font-semibold">FE URT‑1 Controller</h3>
-            <p className="text-sm text-muted-foreground mt-2">Single controller drives all 6 servos with a simple serial protocol.</p>
-          </article>
-          <article className="p-6 rounded-lg border bg-card">
-            <h3 className="font-semibold">Camera + Suction</h3>
-            <p className="text-sm text-muted-foreground mt-2">Integrated vision and a suction pump end effector for pick-and-place.</p>
-          </article>
+          {[
+            {
+              title: '6‑DOF Mechanics',
+              desc: 'Smooth, precise motion across six axes for real applications.',
+            },
+            {
+              title: 'FE UART Controller',
+              desc: 'Compact controller drives six Feetech servos via serial — simple and robust.',
+            },
+            {
+              title: 'Vision‑Ready',
+              desc: 'Camera and suction end‑effector kits for pick‑and‑place demos.',
+            },
+          ].map((f) => (
+            <article key={f.title} className="p-6 rounded-xl border bg-card/60 hover:bg-card transition-colors hover-scale">
+              <h3 className="font-semibold">{f.title}</h3>
+              <p className="text-sm text-muted-foreground mt-2">{f.desc}</p>
+            </article>
+          ))}
         </div>
+      </section>
+
+      <section className="container mx-auto pb-16">
+        <h2 className="font-display text-3xl md:text-4xl mb-8">Key Specifications</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            ['Working Radius', '≈350 mm'],
+            ['Payload', '1 kg'],
+            ['Repeatability', 'up to ±0.3 mm'],
+            ['Controller', 'FE UART (no Raspberry Pi / M5)'],
+            ['Interfaces', '24 V compatible'],
+            ['Software', 'ROS 2 + MoveIt'],
+          ].map(([k, v]) => (
+            <div key={k} className="p-4 rounded-xl border bg-card/60">
+              <div className="text-xs text-muted-foreground">{k}</div>
+              <div className="text-lg font-medium">{v}</div>
+            </div>
+          ))}
+        </div>
+        <p className="text-xs text-muted-foreground mt-6">
+          Specs adapted from Elephant Robotics myCobot 320 and tailored for Chotu (FE UART controller, design differences). See reference: <a className="underline" href="https://shop.elephantrobotics.com/collections/mycobot-pro-320/products/commercial-and-economic-six-axis-collaborative-robot">myCobot 320</a>.
+        </p>
       </section>
       <Testimonials />
       <Contact />
