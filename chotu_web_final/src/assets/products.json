@@ -1,0 +1,86 @@
+
+[
+  {
+    "id": "chotu-kit",
+    "slug": "chotu-robot-kit",
+    "name": "Chotu Robot – 6‑DOF Desktop Arm Kit",
+    "category": "kits",
+    "priceINR": 199900,
+    "shortDescription": "Open‑source 6‑DOF kit with FE UART controller, 1 kg payload, ≈350 mm reach.",
+    "description": [
+      "Full mechanical kit, motors, FE UART controller, cables, fasteners.",
+      "Open ROS 2 bringup and MoveIt configuration with teach/playback examples."
+    ],
+    "specs": {
+      "DOF": 6,
+      "Working radius": "≈350 mm",
+      "Payload": "1 kg",
+      "Repeatability": "up to ±0.3 mm",
+      "Controller": "FE UART (no Raspberry Pi / M5)",
+      "I/O": "24 V compatible"
+    },
+    "images": ["/images/hero/chotu-hero.png"],
+    "inStock": true,
+    "badges": ["Open Source", "Kit"]
+  },
+  {
+    "id": "chotu-aikit",
+    "slug": "chotu-aikit",
+    "name": "Chotu AIKIT",
+    "category": "aikit",
+    "priceINR": 49900,
+    "shortDescription": "Vision kit for Chotu with your branding; plug‑and‑play for demos.",
+    "description": ["Camera + mounts + cables. Preconfigured examples."],
+    "specs": { "Compatibility": "Chotu Robot", "Includes": "Camera, mount, cables" },
+    "images": ["/images/kits/aikit.png"],
+    "inStock": true
+  },
+  {
+    "id": "fe-uart-ctrl",
+    "slug": "fe-uart-controller",
+    "name": "FE UART Controller",
+    "category": "controllers",
+    "priceINR": 8900,
+    "shortDescription": "Drive six Feetech servos with a straightforward serial protocol.",
+    "description": ["Compact controller used in the Chotu kit."],
+    "specs": { "Channels": 6, "Interface": "UART" },
+    "images": ["/images/controllers/fe-uart.png"],
+    "inStock": true
+  },
+  {
+    "id": "pen-gripper",
+    "slug": "pen-gripper",
+    "name": "Pen Gripper",
+    "category": "end-effectors",
+    "priceINR": 3900,
+    "shortDescription": "Lightweight drawing/writing tool with your branding.",
+    "description": ["Install kit, pen holder, alignment tips."],
+    "specs": { "Weight": "Light", "Use": "Drawing/Writing" },
+    "images": ["/images/end-effectors/pen-gripper.png"],
+    "inStock": true
+  },
+  {
+    "id": "suction-gripper",
+    "slug": "suction-gripper",
+    "name": "Suction Gripper",
+    "category": "end-effectors",
+    "priceINR": 6900,
+    "shortDescription": "Suction end‑effector tuned for the Chotu kit.",
+    "description": ["Pump, cup, tubing, mount."],
+    "specs": { "Use": "Pick and place", "Vacuum": "Included pump" },
+    "images": ["/images/end-effectors/suction-gripper.png"],
+    "inStock": true
+  },
+  {
+    "id": "precision-bearings",
+    "slug": "precision-bearings-pack",
+    "name": "Precision Bearings Pack",
+    "category": "bearings",
+    "priceINR": 1490,
+    "shortDescription": "Quality bearings for maintenance and custom joints.",
+    "description": ["Compatible with Chotu assemblies."],
+    "specs": { "Material": "Steel", "Qty": "Pack" },
+    "images": ["/images/bearings/bearings.png"],
+    "inStock": true
+  }
+]
