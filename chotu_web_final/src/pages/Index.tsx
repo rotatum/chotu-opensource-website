@@ -11,7 +11,7 @@ const Index = () => {
     <>
       <Helmet>
         <title>CHOTU Robot – Open Source 6‑DOF Arm</title>
-        <meta name="description" content="CHOTU is an open-source 6‑DOF robotic arm using Feetech STS3215 servos and FE URT-1 controller with camera and suction end effector." />
+        <meta name="description" content="CHOTU is an open-source 6‑DOF robotic arm using Chotu servo motors and Chotu UART controller with camera and suction end effector." />
         <link rel="canonical" href={canonical} />
         {/* Preload critical hero image - WebP for faster loading */}
         <link rel="preload" as="image" href="/images/hero/chotu-hero.webp" type="image/webp" fetchPriority="high" />
@@ -39,8 +39,8 @@ const Index = () => {
                   desc: 'Smooth, precise motion across six axes for real applications.',
                 },
                 {
-                  title: 'FE UART Controller',
-                  desc: 'Compact controller drives six Feetech servos via serial — simple and robust.',
+                  title: 'Chotu UART Controller',
+                  desc: 'Compact controller drives six Chotu servo motors via serial — simple and robust.',
                 },
                 {
                   title: 'Vision‑Ready',
@@ -62,7 +62,7 @@ const Index = () => {
                 ['Working Radius', '≈350 mm'],
                 ['Payload', '1 kg'],
                 ['Repeatability', 'up to ±0.3 mm'],
-                ['Controller', 'FE UART (no Raspberry Pi / M5)'],
+                ['Controller', 'Chotu UART (no Raspberry Pi / M5)'],
                 ['Interfaces', '24 V compatible'],
                 ['Software', 'ROS 2 + MoveIt'],
               ].map(([k, v]) => (
@@ -73,7 +73,7 @@ const Index = () => {
               ))}
             </div>
             <p className="text-xs text-muted-foreground mt-6">
-              Specs adapted from Elephant Robotics myCobot 320 and tailored for Chotu (FE UART controller, design differences). See reference: <a className="underline" href="https://shop.elephantrobotics.com/collections/mycobot-pro-320/products/commercial-and-economic-six-axis-collaborative-robot">myCobot 320</a>.
+              Specs adapted from Elephant Robotics myCobot 320 and tailored for Chotu (Chotu UART controller, design differences). See reference: <a className="underline" href="https://shop.elephantrobotics.com/collections/mycobot-pro-320/products/commercial-and-economic-six-axis-collaborative-robot">myCobot 320</a>.
             </p>
           </section>
           

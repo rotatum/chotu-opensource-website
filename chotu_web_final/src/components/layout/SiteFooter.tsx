@@ -5,7 +5,7 @@ export default function SiteFooter() {
         <section>
           <h3 className="font-semibold mb-2">About</h3>
           <p className="text-sm text-muted-foreground">
-            CHOTU is an open-source 6‑DOF robotic arm powered by Feetech STS3215 servos and the FE URT-1 controller.
+            CHOTU is an open-source 6‑DOF robotic arm powered by Chotu servo motors and the Chotu UART controller.
           </p>
         </section>
         <section>

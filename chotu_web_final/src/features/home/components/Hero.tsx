@@ -11,7 +11,7 @@ export default function Hero() {
             <span className="block text-2xl md:text-3xl text-muted-foreground mt-3">Open‑Source 6‑DOF Collaborative Arm</span>
           </h1>
           <p className="text-muted-foreground mt-6 leading-relaxed">
-            ≈350 mm reach, 1 kg payload, up to ±0.3 mm repeatability. FE UART controller — no Raspberry Pi or M5 required.
+            ≈350 mm reach, 1 kg payload, up to ±0.3 mm repeatability. Chotu UART controller — no Raspberry Pi or M5 required.
             Designed for learning, research, and rapid prototyping with ROS 2 and MoveIt.
           </p>
           <div className="mt-8 flex gap-3">

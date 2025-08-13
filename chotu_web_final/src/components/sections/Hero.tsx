@@ -21,10 +21,10 @@ export default function Hero() {
       <div className="container mx-auto py-24 md:py-32">
         <h1 className="font-display text-4xl md:text-6xl font-semibold leading-tight animate-enter">
           CHOTU Robot
-          <span className="block text-lg md:text-2xl font-sans text-muted-foreground mt-2">Open-source 6‑DOF robotic arm powered by Feetech</span>
+          <span className="block text-lg md:text-2xl font-sans text-muted-foreground mt-2">Open-source 6‑DOF robotic arm powered by Chotu</span>
         </h1>
         <p className="max-w-2xl mt-6 text-muted-foreground">
-          6 Feetech STS3215 servos driven by the FE URT-1 controller, with an on-board camera and suction pump end effector.
+          6 Chotu servo motors driven by the Chotu UART controller, with an on-board camera and suction pump end effector.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <NavLink to="/open-source"><Button variant="hero" className="hover-scale">Get Started</Button></NavLink>

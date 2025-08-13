@@ -31,7 +31,7 @@ export default function Store() {
     <>
       <Helmet>
         <title>Store – Chotu Robot Parts & Kits (INR)</title>
-        <meta name="description" content="Chotu AIKIT, FE UART controller, motors, end effectors, bearings, and the full 6‑DOF Chotu Robot kit." />
+        <meta name="description" content="Chotu AIKIT, Chotu UART controller, motors, end effectors, bearings, and the full 6‑DOF Chotu Robot kit." />
         <link rel="canonical" href={canonical} />
         <script type="application/ld+json">{JSON.stringify(productLdJson)}</script>
       </Helmet>

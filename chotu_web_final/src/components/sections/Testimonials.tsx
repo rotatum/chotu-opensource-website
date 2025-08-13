@@ -11,7 +11,7 @@ export default function Testimonials() {
       role: "Maker & Educator"
     },
     {
-      quote: "Smooth motion with the STS3215s and FE URT-1—impressive.",
+      quote: "Smooth motion with the Chotu servo motors and Chotu UART—impressive.",
       name: "Vikram R.",
       role: "Automation Lead"
     }
